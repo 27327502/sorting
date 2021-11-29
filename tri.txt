@@ -1,0 +1,25 @@
+ALGORITHM INSERTION_SORT
+VAR
+T:Array_of_integer[1..30];
+i:integer;
+BEGIN
+repeat
+write('saisir la taille du tableau:');
+read(n)
+until (n>=5);
+for i from 0 to n-1 step1 do 
+    write('t[',i,']');
+    read(t[i]);
+repeat
+  write('saisir x:');
+  read(x);
+until x in ['0'..'9'];
+T[n]:=x ;
+FOR i FROM 1 TO n-1 STEP 1  DO
+  FOR j  FROM 1 TO n-i-1 STEP 1  DO
+    IF (tab[j] > tab[j+1]) THEN
+      swap(tab[j], tab[j+1])
+    END_IF
+  END_FOR
+END_FOR
+END.
